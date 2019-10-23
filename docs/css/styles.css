@@ -1,0 +1,9 @@
+html {
+    font: 18px/1 sans-serif;
+}
+
+.table {
+    background-color: green;
+    width: 40rem;
+    height: 100rem;
+}
