@@ -1,0 +1,25 @@
+{
+  "name": "blackjack-cbgeebees-21-or-bust",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git+https://github.com/WeCanCodeIT/blackjack-cbgeebees-21-or-bust.git",
+  "keywords": [],
+  "author": "Cholliex <ochollieoh@yahoo.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WeCanCodeIT/blackjack-cbgeebees-21-or-bust/issues"
+  },
+  "homepage": "https://github.com/WeCanCodeIT/blackjack-cbgeebees-21-or-bust#readme",
+  "dependencies": {
+    "blackjack-dealer-logic": "^1.1.4",
+    "fireworks-canvas": "^2.3.2",
+    "playing-card-deck-generator": "^2.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
