@@ -1,33 +1,31 @@
-const {
-    default: { singleDeckGame }
-  } = require("blackjack-dealer-logic");
-  
-  singleDeckGame.deal();
-  
-  const userHand = singleDeckGame.getUserHand();
-  
-  generateCard(userHand.getCards()[0]);
-  generateCard(userHand.getCards()[1]);
-  
-  function generateCard(card) {
-    const playingCard = document.createElement("section");
-    playingCard.classList.add("playing-card");
-  
-    const valueContainer = document.createElement("section");
-    valueContainer.classList.add("value-container");
-  
-    const value = document.createElement("span");
-    value.classList.add("value");
-    value.textContent = card.getValue();
-  
-    const suit = document.createElement("span");
-    suit.classList.add("suit");
-    suit.textContent = card.getSuit();
-  
-    valueContainer.append(value);
-    valueContainer.append(suit);
-    playingCard.append(valueContainer);
-  
-    const table = document.querySelector(".table");
-    table.append(playingCard);
-  }
+import main from "./js/main"
+// const {
+//   default: { singleDeckGame }
+// } = require("blackjack-dealer-logic");
+
+alert("HELLO!");
+
+const buttons = document.querySelectorAll(".button");
+
+buttons.forEach(function (button) {
+
+  button.addEventListener("click", () => {
+
+    const paragraph = document.createElement("p");
+
+    paragraph.classList.add("newParagraph");
+
+    paragraph.textContent = "My silly paragraph!";
+
+    document.body.append(paragraph);
+
+  });
+
+  // backgroundButton.addEventListener("click", () => {
+  //   const paragraph = document.querySelector(".newParagraph");
+
+  //   paragraph.classList.add("redBackground");
+  //   paragraph.classList.remove("newParagraph");
+  // });
+
+  main()
