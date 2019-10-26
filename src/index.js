@@ -2,31 +2,17 @@ const {
   default: { singleDeckGame }
 } = require("blackjack-dealer-logic");
 
+const Dom = require("./utils/Dom");
+
 singleDeckGame.deal();
 
-var userHandStr = singleDeckGame.getUserHandValue();
+var userCardsArray = singleDeckGame.getUserHand().getCards();
+var dealerCardsArray = singleDeckGame.getDealerHand().getCards();
 
-var userCardsArr = userHandStr.split(",")
-// for each card in userCardsArr {}
-  generateCard(userCardsArr[0]);
-  generateCard(userCardsArr[1]);
-//}
+
+Dom.generateCard(userCardsArray[0]);
+Dom.generateCard(userCardsArray[1]);
+
 //generateCard(userHand.getCards()[1]);
 
-function generateCard(card) {
-  const playingCard = document.createElement("section");
-  playingCard.classList.add("playing-card");
 
-  const valueContainer = document.createElement("section");
-  valueContainer.classList.add("value-container");
-
-  const value = document.createElement("span");
-  value.classList.add("value");
-  value.textContent = card;
-
-  valueContainer.append(value);
-  playingCard.append(valueContainer);
-
-  const table = document.querySelector(".table");
-  table.append(playingCard);
-}
