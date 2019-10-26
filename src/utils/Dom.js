@@ -15,8 +15,7 @@ module.exports = {
     valueContainer.append(value);
     playingCard.append(valueContainer);
 
-    const userSection = document.querySelector(".hand-container-user");
-    userSection.append(playingCard);
+    return playingCard;
   }
 
 }

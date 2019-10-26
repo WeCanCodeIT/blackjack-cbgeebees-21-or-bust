@@ -9,10 +9,17 @@ singleDeckGame.deal();
 var userCardsArray = singleDeckGame.getUserHand().getCards();
 var dealerCardsArray = singleDeckGame.getDealerHand().getCards();
 
+const userSection = document.querySelector(".hand-container-user");
+const dealerSection = document.querySelector(".hand-container-dealer");
 
-Dom.generateCard(userCardsArray[0]);
-Dom.generateCard(userCardsArray[1]);
+playingCardUser1 = Dom.generateCard(userCardsArray[0]);
+playingCardUser2 = Dom.generateCard(userCardsArray[1]);
+userSection.append(playingCardUser1);
+userSection.append(playingCardUser2);
 
-//generateCard(userHand.getCards()[1]);
+playingCardDealer1 = Dom.generateCard(dealerCardsArray[0]);
+playingCardDealer2 = Dom.generateCard(dealerCardsArray[1]);
+dealerSection.append(playingCardDealer1);
+
 
 
