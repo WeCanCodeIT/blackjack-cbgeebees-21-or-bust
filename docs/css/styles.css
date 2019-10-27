@@ -3,17 +3,19 @@ html {
 }
 
 h1 {
-    
+    margin: 5px;
 }
 
-h2 {
+h3 {
     color: #CEFFFC;
-    margin: 12px;
+    margin: 12px 5px 5px 12px;
 }
-h3{
+
+h4 {
     color: #CEFFFC;
     margin: 5px 5px 5px 12px;  
 }
+
 .table {
     display: flex;
     flex-direction: column;
@@ -24,21 +26,22 @@ h3{
 
 .hand-container-dealer {
     display: flex;
-    margin: 15px 15px 20px 15px;
+    margin: 10px;
     flex-direction: row;
-    height: 10rem;
+    min-height: 8.5rem;
+    flex-wrap: wrap;
 }
 
 .hand-container-user {
     display: flex;
-    margin: 15px 15px 50px 15px;
+    margin: 10px 10px 50px 10px;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
-
 .playing-card {
-    width: 7rem;
-    height: 10rem;
+    width: 5.5rem;
+    height: 8rem;
     background-color: white;
     border: 1px;
     border-radius: 25px;
@@ -50,7 +53,7 @@ h3{
     margin: auto;
     background-color: white;
     block-size: 70%;
-    width: 4rem;
+    width: 3rem;
     border: 1px red solid;
     /* padding: 4px;
     border: 1px; */

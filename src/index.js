@@ -6,6 +6,9 @@ const Dom = require("./utils/Dom");
 
 singleDeckGame.deal();
 
+let userChips = 200;
+let answer = prompt("How much would you like to bet?\nYour current chip count is "+userChips);
+
 let userCardsArray = singleDeckGame.getUserHand().getCards();
 let dealerCardsArray = singleDeckGame.getDealerHand().getCards();
 
