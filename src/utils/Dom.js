@@ -16,6 +16,13 @@ module.exports = {
     playingCard.append(valueContainer);
 
     return playingCard;
-  }
+  },
+
+  hitButtonEvent(singleDeckGame) {
+    singleDeckGame.hitUser();
+    let userCardsArray = singleDeckGame.getUserHand().getCards();
+    playingCardUser = this.generateCard(userCardsArray[userCardsArray.length - 1]);
+    return playingCardUser;
+  },
 
 }

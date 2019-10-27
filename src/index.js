@@ -6,8 +6,8 @@ const Dom = require("./utils/Dom");
 
 singleDeckGame.deal();
 
-var userCardsArray = singleDeckGame.getUserHand().getCards();
-var dealerCardsArray = singleDeckGame.getDealerHand().getCards();
+let userCardsArray = singleDeckGame.getUserHand().getCards();
+let dealerCardsArray = singleDeckGame.getDealerHand().getCards();
 
 const userSection = document.querySelector(".hand-container-user");
 const dealerSection = document.querySelector(".hand-container-dealer");
@@ -21,11 +21,17 @@ playingCardDealer1 = Dom.generateCard(dealerCardsArray[0]);
 playingCardDealer2 = Dom.generateCard(dealerCardsArray[1]);
 dealerSection.append(playingCardDealer1);
 
-const hitButton = document.querySelector(".buttn-hit");
+const hitButton = document.querySelector(".button-hit");
 hitButton.addEventListener("click", () => {
-singleDeckGame.hitUser();
-
+  console.log ("hit button clicked");
+  newUserCard = Dom.hitButtonEvent(singleDeckGame);
+  userSection.append(newUserCard);
+  // if (singleDeckGame.isUserBust() {
+  //   //end game and user loses
+  // }
+  
 })
+
 
 
 

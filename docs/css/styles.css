@@ -58,14 +58,15 @@ h3{
 }
 
 .value {
-margin: auto;
+    margin: auto;
 }
+
 .main-header{
     display: flex;
     width: 42rem;
     justify-content: space-between; 
 }
-.actions{
-align-self: center;    
 
+.actions{
+    align-self: center;
 }
