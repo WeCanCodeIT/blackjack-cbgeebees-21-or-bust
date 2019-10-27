@@ -10,7 +10,7 @@ h1 {
     display: flex;
     flex-direction: column;
     background-color: green;
-    width: 46rem;
+    width: 42rem;
     height: 40rem;
 }
 
@@ -54,8 +54,7 @@ margin: auto;
 }
 .main-header{
     display: flex;
-    width: 46rem;
-
+    width: 42rem;
     justify-content: space-between; 
 }
 .actions{
