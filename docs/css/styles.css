@@ -6,6 +6,11 @@ h1 {
     
 }
 
+h2 {
+    color: #CEFFFC;
+    margin: 12px;
+}
+
 .table {
     display: flex;
     flex-direction: column;
