@@ -24,7 +24,7 @@ h3{
 
 .hand-container-dealer {
     display: flex;
-    margin: 15px 15px 50px 15px;
+    margin: 15px 15px 20px 15px;
     flex-direction: row;
     height: 10rem;
 }
