@@ -10,7 +10,10 @@ h2 {
     color: #CEFFFC;
     margin: 12px;
 }
-
+h3{
+    color: #CEFFFC;
+    margin: 5px 5px 5px 12px;  
+}
 .table {
     display: flex;
     flex-direction: column;
