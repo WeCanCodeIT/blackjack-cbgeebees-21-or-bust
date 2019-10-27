@@ -52,3 +52,7 @@ h1 {
 .value {
 margin: auto;
 }
+.main-header{
+    display: flex;
+    justify-content: space-between; 
+}
