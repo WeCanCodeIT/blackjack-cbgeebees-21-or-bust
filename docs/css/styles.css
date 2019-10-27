@@ -54,5 +54,11 @@ margin: auto;
 }
 .main-header{
     display: flex;
+    width: 46rem;
+
     justify-content: space-between; 
+}
+.actions{
+align-self: center;    
+
 }
