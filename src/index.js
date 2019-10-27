@@ -21,5 +21,13 @@ playingCardDealer1 = Dom.generateCard(dealerCardsArray[0]);
 playingCardDealer2 = Dom.generateCard(dealerCardsArray[1]);
 dealerSection.append(playingCardDealer1);
 
+const hitButton = document.querySelector(".buttn-hit");
+hitButton.addEventListener("click", () => {
+singleDeckGame.hitUser();
+
+})
+
+
+
 
 
